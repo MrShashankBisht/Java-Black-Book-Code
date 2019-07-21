@@ -1,0 +1,10 @@
+   <synth>
+     <style id="label">
+       <opaque value="true"/>
+       <font name="Monospaced" size="21" style="BOLD"/>
+       <state>
+         <color value="BLUE" type="FOREGROUND"/>
+       </state>
+     </style>
+     <bind style="label" type="region" key="Label"/>
+   </synth>

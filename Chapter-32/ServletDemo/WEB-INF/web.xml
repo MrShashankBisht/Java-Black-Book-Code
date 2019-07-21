@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+  <servlet>
+    <servlet-name>DynamicImageing</servlet-name>
+    <servlet-class>com.imaging.DynamicImageing</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Link</servlet-name>
+    <servlet-class>Link</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowHeaders</servlet-name>
+    <servlet-class>ShowHeaders</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowParameters</servlet-name>
+    <servlet-class>ShowParameters</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowForm</servlet-name>
+    <servlet-class>ShowForm</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FileUpLoad</servlet-name>
+    <servlet-class>FileUpLoad</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Servlet2Servlet</servlet-name>
+    <servlet-class>Servlet2Servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Servlet2Servlet2</servlet-name>
+    <servlet-class>Servlet2Servlet2</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>DynamicImageing</servlet-name>
+    <url-pattern>/servlet/DynamicImageing</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Link</servlet-name>
+    <url-pattern>/Link</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowHeaders</servlet-name>
+    <url-pattern>/ShowHeaders</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowParameters</servlet-name>
+    <url-pattern>/ShowParameters</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowForm</servlet-name>
+    <url-pattern>/ShowForm</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FileUpLoad</servlet-name>
+    <url-pattern>/FileUpLoad</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Servlet2Servlet</servlet-name>
+    <url-pattern>/Servlet2Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Servlet2Servlet2</servlet-name>
+    <url-pattern>/Servlet2Servlet2</url-pattern>
+  </servlet-mapping>
+</web-app>

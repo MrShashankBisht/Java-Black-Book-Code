@@ -1,0 +1,40 @@
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+/* <APPLET
+	CODE = menucontrols.class
+	WIDTH = 350
+	HEIGHT = 280 >
+</APPLET>
+*/
+public class menucontrols extends JApplet implements ActionListener {
+public void init() {
+JMenuBar jmenubar = new JMenuBar();
+JMenu jmenu1 = new JMenu("File");
+JMenuItem jmenuitem1 = new JMenuItem("New..."),
+jmenuitem2 = new JMenuItem("Open..."),
+jmenuitem3 = new JMenuItem("Exit");
+JButton jbutton = new JButton("Click Me!");
+jbutton.setActionCommand("You clicked the button");
+jbutton.addActionListener(this);
+jmenu1.add(jmenuitem1);
+jmenu1.add(jmenuitem2);
+jmenu1.addSeparator();
+jmenu1.add(jbutton);
+jmenu1.addSeparator();
+jmenu1.add(jmenuitem3);
+JMenu jmenu2 = new JMenu("Edit");
+JMenuItem jmenuitem4 = new JMenuItem("Cut"),
+jmenuitem5 = new JMenuItem("Copy"),
+jmenuitem6 = new JMenuItem("Paste");
+jmenu2.add(jmenuitem4);
+jmenu2.add(jmenuitem5);
+jmenu2.add(jmenuitem6);
+jmenubar.add(jmenu1);
+jmenubar.add(jmenu2);
+setJMenuBar(jmenubar); }
+public void actionPerformed(ActionEvent e) {
+JButton jbutton = (JButton)e.getSource();
+showStatus(jbutton.getActionCommand());
+}
+}
